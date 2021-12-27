@@ -1,1 +1,19 @@
 <p>This is the partial for view 1.</p>
+<!-- as a Dom element -->
+<treecontrol class="tree-classic"
+             tree-model="dataForTheTree"
+             options="treeOptions"
+             on-selection="showSelected(node)"
+             selected-node="node1">
+    employee: {{node.name}} age {{node.age}}
+</treecontrol>
+<!-- as an attribute -->
+<div treecontrol class="tree-classic"
+     tree-model="dataForTheTree"
+     options="treeOptions"
+     on-selection="showSelected(node)"
+     selected-node="node1">
+    employee: {{node.name}} age {{node.age}}
+</div>
+
+{{test}}
